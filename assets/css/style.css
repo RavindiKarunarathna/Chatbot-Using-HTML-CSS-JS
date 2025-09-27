@@ -7,10 +7,11 @@
     box-shadow: rgba(0, 0, 0, 0.24)0px 3px 8px;
     border-radius: 20px;
     border: 1px solid lightgrey;
-    position: absolute;
-    bottom: 60px;
-    right: 20px;
-    height: 600px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 500px;
     width: 360px;
     display: flex;
     flex-direction: column;
