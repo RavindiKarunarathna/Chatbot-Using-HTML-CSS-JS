@@ -4,35 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chatbot</title>
+  <title>Chat bot</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <section class="chat-window">
-    <button class="close">x close</button>
-    <div class="chat">
-      <div class="model">
-        <p>Hi, how can I help you?</p>
-      </div>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>Chat bot</h1>
     </div>
-    <div class="input-area">
-      <input type="text" placeholder="Ask me anything...">
-      <button>
-        <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-          <g id="SVGRepo_iconCarrier">
-            <path
-              d="m21.426 11.095-17-8A1 1 0 0 0 3.03 4.242l1.212 4.849L12 12l-7.758 2.909-1.212 4.849a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81z">
-            </path>
-          </g>
-        </svg>
-      </button>
-    </div>
-  </section>
 
-  <script input="module" src="assets/js/app.js"></script>
+    <div class="chat-message" id="chat-message"></div>
+
+      <div class="chat-input-container">
+        <input type="text" id="user-input" placeholder="Please type your message">
+        <button id="send-button">Send</button>
+      </div>
+    
+  </div>
+
+
+
+  <script src="assets/js/app.js"></script>
 </body>
 
 </html>
